@@ -6,10 +6,10 @@ https://github.com/MorvanZhou/PyTorch-Tutorial/blob/master/tutorial-contents/405
 import torch
 import torch.optim as optim
 from torch.utils.data import DataLoader
-from Stock_Scripts.stockDataset import  StockData
+from stockDataset import  StockData
 from matplotlib import pyplot as plt
 import pandas as pd
-from Stock_Scripts.stockAgent import StockAgent
+from stockAgent import StockAgent
 
 
 ''' Defining variables for testing and training '''
