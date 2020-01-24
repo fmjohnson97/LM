@@ -2,7 +2,7 @@ from torch.utils.data import DataLoader
 import torch
 import torch.nn as nn
 import torch.optim as optim
-from Stock_Scripts.stockDataset import  StockData
+from stockDataset import  StockData
 from matplotlib import pyplot as plt
 
 
