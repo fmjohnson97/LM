@@ -55,7 +55,7 @@ class Manager(object):
         self.discount_factor = discount_factor
         self.maze_ind = 0
         self.maze_size = maze_size
-        self.device=torch.device('cpu')
+        self.device=torch.device('cuda')
         self.dqn=DQN().to(self.device)
         self.target=DQN().to(self.device)
         self.dqn_opt=optim.Adam(self.dqn.parameters())
@@ -108,7 +108,7 @@ class Worker(object):
         self.max_t = np.prod(maze_size, dtype=int) * 100
         self.maze_ind = 1
         self.maze_size = maze_size
-        self.device = torch.device('cpu')
+        self.device = torch.device('cuda')
         self.dqn=DQN().to(self.device)
         self.target=DQN().to(self.device)
         self.dqn_opt = optim.Adam(self.dqn.parameters())
