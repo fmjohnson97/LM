@@ -1,6 +1,8 @@
 # LM
 Code for the LM project collaboration
+
 Required Packages: Quandl, Gym, Pygame, Pandas, Sklearn, Torchvision, Pytorch, Tqdm, Scipy
+
 Optional Packages: Comet_ml
 
 ### Initial Stock Experiments 
