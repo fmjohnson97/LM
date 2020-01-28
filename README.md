@@ -1,5 +1,7 @@
 # LM
-Code for the LM project collaboration 
+Code for the LM project collaboration
+Required Packages: Quandl, Gym, Pygame, Pandas, Sklearn, Torchvision, Pytorch, Tqdm, Scipy
+Optional Packages: Comet_ml
 
 ### Initial Stock Experiments 
 * __stockSynthesis.py__   - simple LSTM close price prediction given the corresponding open price 
