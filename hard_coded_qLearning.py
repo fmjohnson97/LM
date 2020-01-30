@@ -26,7 +26,7 @@ class q_agent(object):
         self.last_price = [1.0] * self.sectors
         self.value = []
 
-    def select_action(self, state):  # epsilon greedy strategy
+    def select_action(self, state): 
         diff = np.array(state) - np.array(self.last_price)
         action = []
         for d in diff:
