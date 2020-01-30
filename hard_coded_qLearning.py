@@ -17,8 +17,8 @@ class q_agent(object):
         self.portfolio = [0] * sectors
         self.last_price = [1.0] * sectors
         self.value = []
-        self.s_thresh = .5
-        self.b_thresh = -.5
+        self.s_thresh = -.5
+        self.b_thresh = .5
 
     def reset(self, bal=500):
         self.balance = bal
@@ -30,9 +30,9 @@ class q_agent(object):
         diff = np.array(state) - np.array(self.last_price)
         action = []
         for d in diff:
-            if d > self.s_thresh:
+            if d < self.s_thresh:
                 action.append(-1)
-            elif d < self.b_thresh:
+            elif d > self.b_thresh:
                 action.append(1)
             else:
                 action.append(0)
