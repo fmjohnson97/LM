@@ -46,8 +46,8 @@ def compute_reward(goal, pos, reward):
 ### Begin the Simulation ###
 
 # declare the environment
-man_maze_path='/home/faith/PycharmProjects/FeudalTests/gym-maze-master/gym_maze/envs/maze_samples/maze2d_002.npy'#None #ToDo: replace this with the path to a maze file
-work_maze_path='/home/faith/PycharmProjects/FeudalTests/gym-maze-master/gym_maze/envs/maze_samples/maze2d_003.npy'#None #ToDo: replace this with the path to a maze file
+man_maze_path='maze2d_002.npy' #ToDo: replace this with the path to a maze file
+work_maze_path='maze2d_003.npy' #ToDo: replace this with the path to a maze file
 gx=None #ToDo: None makes the goal in a random place. Change this to the x coordinate of your desired goal in the maze to have it fixed
 gy=None #ToDo: None makes the goal in a random place. Change this to the y coordinate of your desired goal in the maze to have it fixed
 env = MultiMaze(man_maze_path, work_maze_path, gx, gy)
