@@ -33,7 +33,7 @@ class DQN(nn.Module):
         self.layer2 = nn.LSTM(4, 8, num_layers=64)
         self.layer3 = nn.LSTM(8, 16, num_layers=64)
         self.relu = nn.ReLU()
-        self.fc = nn.Linear(4, 4)
+        self.fc = nn.Linear(16, 4)
         self.sigmoid = nn.Sigmoid()
 
     def forward(self, x):
