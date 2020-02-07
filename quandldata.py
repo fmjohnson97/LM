@@ -117,7 +117,7 @@ class StockAgent(nn.Module):
 
 ### Get the stock data into a data frame ###
 
-apiKey='qYBFpqvYsQue42qTmNJ1' #None #ToDo: in order to use quandl you need an API key, so put that here
+apiKey= None #ToDo: in order to use quandl you need an API key, so put that here
 
 #Technology Sector
 #Computer Communications Equipment
