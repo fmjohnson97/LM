@@ -1,6 +1,8 @@
 # LM
 Code for the LM project collaboration
 
+It may be helpful to install this git repo for the maze code: https://github.com/MattChanTK/gym-maze.
+
 Required Packages: Quandl, Gym, Pygame, Pandas, Sklearn, Torchvision, Pytorch, Tqdm, Scipy
 
 Optional Packages: Comet_ml
