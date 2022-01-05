@@ -139,7 +139,7 @@ for episode in range(NUM_EPISODES):
                 # Render both mazes (doesn't actually work but it kind of superimposes them so you can make out what
                 # the manager is doing
                 if RENDER_MAZE:
-                    env.render(0)  # ToDo: comment out this line if you don't want to see what the manager does
+                    #env.render(0)  # ToDo: comment out this line if you don't want to see what the manager does
                     env.render(-1) # ToDo: comment out this line if you don't want to see what the worker does
 
                 # check if worker at target without following the manager's directions
@@ -188,4 +188,4 @@ for episode in range(NUM_EPISODES):
 
     # It's considered done when it's solved over 50 times consecutively
     if num_streaks > STREAK_TO_END:
-        break
+        exit(0)

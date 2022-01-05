@@ -80,13 +80,14 @@ def simulate():
                     num_streaks = 0
                 break
 
+
             elif t >= MAX_T - 1:
                 print("Episode %d timed out at %d with total reward = %f."
                       % (episode, t, total_reward))
 
         # It's considered done when it's solved over 120 times consecutively
         if num_streaks > STREAK_TO_END:
-            break
+            exit(0)
 
         # Update parameters
         explore_rate = get_explore_rate(episode)
